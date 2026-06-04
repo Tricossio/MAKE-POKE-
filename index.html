@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Poké - Construye tu Bowl</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER STICKY -->
+    <header class="header sticky">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo make.png" alt="Make Poké Logo" class="logo-img">
+                    <span>Make Poké</span>
+                </div>
+                
+                <!-- Menú Hamburguesa -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <!-- Navegación -->
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                        <li><a href="#menu" class="nav-link">Menú</a></li>
+                        <li><a href="#arma-tu-bowl" class="nav-link">Arma tu Bowl</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Make Poké</h1>
+            <p>Crea tu bowl de Poké perfecto</p>
+            <a href="#arma-tu-bowl" class="btn btn-primary">Comienza Ahora</a>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="hero-image-circle">
+                <img src="bowl de makepoke.png" alt="Bowl de Poké" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MENÚ -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestros Bowls Destacados</h2>
+            
+            <div class="menu-grid">
+                <div class="menu-card fade-in">
+                    <img src="arroz make.png" alt="Bowl con Arroz">
+                    <h3>Clásico</h3>
+                    <p>Arroz, Pulpo, Salsa Picante</p>
+                    <span class="price">Bs. 25.00</span>
+                </div>
+                
+                <div class="menu-card fade-in">
+                    <img src="quinoa make.png" alt="Bowl con Quinua">
+                    <h3>Saludable</h3>
+                    <p>Quinua, Ceviche, Salsa Acevichada</p>
+                    <span class="price">Bs. 28.00</span>
+                </div>
+                
+                <div class="menu-card fade-in">
+                    <img src="lechuga make.png" alt="Bowl con Lechuga">
+                    <h3>Premium</h3>
+                    <p>Lechuga, Paiche, Sriracha</p>
+                    <span class="price">Bs. 32.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ARMA TU BOWL -->
+    <section id="arma-tu-bowl" class="arma-tu-bowl">
+        <div class="container">
+            <h2 class="section-title fade-in">Arma tu Bowl</h2>
+            <p class="section-subtitle fade-in">Selecciona tus ingredientes favoritos</p>
+            
+            <div class="bowl-constructor">
+                <!-- FORMULARIO -->
+                <div class="constructor-form fade-in">
+                    <!-- BASE -->
+                    <div class="ingredient-group">
+                        <h3>Base</h3>
+                        <label class="radio-option">
+                            <input type="radio" name="base" value="Arroz" checked>
+                            <span class="option-label">Arroz</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="base" value="Lechuga">
+                            <span class="option-label">Lechuga</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="base" value="Quinua">
+                            <span class="option-label">Quinua</span>
+                        </label>
+                    </div>
+
+                    <!-- PROTEÍNA -->
+                    <div class="ingredient-group">
+                        <h3>Proteína</h3>
+                        <label class="radio-option">
+                            <input type="radio" name="proteina" value="Pulpo" checked>
+                            <span>Pulpo</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="proteina" value="Ceviche">
+                            <span>Ceviche</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="proteina" value="Paiche">
+                            <span>Paiche</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="proteina" value="Pollo">
+                            <span>Pollo</span>
+                        </label>
+                    </div>
+
+                    <!-- SALSA -->
+                    <div class="ingredient-group">
+                        <h3>Salsa</h3>
+                        <label class="radio-option">
+                            <input type="radio" name="salsa" value="Picante" checked>
+                            <span>Picante</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="salsa" value="Acevichada">
+                            <span>Acevichada</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="salsa" value="Soya">
+                            <span>Soya</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="salsa" value="Sriracha">
+                            <span>Sriracha</span>
+                        </label>
+                    </div>
+
+                    <!-- VEGETALES (CHECKBOXES) -->
+                    <div class="ingredient-group">
+                        <h3>Vegetales Adicionales</h3>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Zanahoria">
+                                <span>Zanahoria</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Pico de gallo">
+                                <span>Pico de gallo</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Mango">
+                                <span>Mango</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Durazno">
+                                <span>Durazno</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Chuchusmuti">
+                                <span>Chuchusmuti</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Nachos">
+                                <span>Nachos</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Pepino">
+                                <span>Pepino</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Repollo morado">
+                                <span>Repollo morado</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="vegetales" value="Palta">
+                                <span>Palta</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RESUMEN DEL BOWL -->
+                <div class="bowl-summary fade-in">
+                    <div class="bowl-card">
+                        <h3>Tu Bowl</h3>
+                        <div class="summary-content">
+                            <div class="summary-item">
+                                <strong>Base:</strong>
+                                <span id="summary-base">Arroz</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Proteína:</strong>
+                                <span id="summary-proteina">Pulpo</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Salsa:</strong>
+                                <span id="summary-salsa">Picante</span>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Vegetales:</strong>
+                                <span id="summary-vegetales">Ninguno seleccionado</span>
+                            </div>
+                        </div>
+                        <div class="bowl-price">
+                            <p>Precio: <strong id="bowl-price">Bs. 25.00</strong></p>
+                        </div>
+                        <!-- Carrito de compras dinámico agregado -->
+                        <div class="cart-widget">
+                            <h4>Carrito de Compras</h4>
+                            <p class="cart-info" id="cart-count" style="display:none;">Llevas 0 bowls en el carrito</p>
+                            <div id="cart-items" class="cart-items">
+                                <p class="cart-empty">Tu carrito está vacío. Agrega tu primer bowl personalizado.</p>
+                            </div>
+                            <div class="cart-summary">
+                                <div class="cart-row">
+                                    <span>Subtotal</span>
+                                    <strong id="cart-subtotal">Bs. 0.00</strong>
+                                </div>
+                                <div class="cart-row total-row">
+                                    <span>Total</span>
+                                    <strong id="cart-total">Bs. 0.00</strong>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-block" id="finalizar-pedido" type="button">
+                                Finalizar Pedido
+                            </button>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="agregar-carrito">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo y Descripción -->
+                <div class="footer-section fade-in">
+                    <div class="footer-logo">
+                        <img src="logo make.png" alt="Make Poké">
+                        <h3>Make Poké</h3>
+                    </div>
+                    <p>Tu experiencia de poké personalizado</p>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-section fade-in">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            <a href="tel:+591 65335055">+591 65335055</a>
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            <span>Hupermall Av. Pando</span>
+                        </li>
+                        <li>
+                            <strong>Correo:</strong>
+                            <a href="armatubowl.com">armatubowl.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="footer-section fade-in">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/make.poke/?hl=es" target="_blank" class="social-icon" title="Instagram">
+                            Instagram
+                        </a>
+                        <a href="https://www.tiktok.com/@make.poke" target="_blank" class="social-icon" title="TikTok">
+                            Siguenos en TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Make Poké. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contenedor de notificaciones tipo toast -->
+    <div id="toast-container" class="toast-container"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
